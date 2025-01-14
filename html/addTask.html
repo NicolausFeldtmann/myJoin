@@ -13,6 +13,7 @@
     <link rel="manifest" href="../assets/img/favicon/site.webmanifest">
     <title>Add Task</title>
 
+    <link rel="stylesheet" href="/styles/addTask.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
     <link rel="stylesheet" type="text/css" href="../styles/desktopTemplate.css">
     <link rel="stylesheet" type="text/css" href="../styles/fonts.css">
@@ -24,7 +25,77 @@
   <body onload="includeHTML()">
     <div w3-include-html="../assets/templates/desktopTemplate.html"></div>
     
-    
+    <main>
+
+      <h1>Add Task</h1>
+
+      <div class="addContent">
+        <div class="frame">
+          <div class="addBox">
+            <h3>Add Title</h3>
+            <input type="text" placeholder="Add a title">
+          </div>
+          <div class="addBox">
+            <h3>Description</h3>
+            <textarea placeholder="Enter a description"></textarea>
+          </div>
+          <div class="addBox">
+            <h3>Assigned to</h3>
+            <input type="text" list="" placeholder="Select contacts to assign">
+          </div>
+        </div>
+
+        <div class="taskSeperator"></div>
+
+        <div class="frame">
+          <div class="addBox">
+            <h3>Due date</h3>
+            <input type="date">
+          </div>
+          <div class="addBox">
+            <h3>Prio</h3>
+            <div class="prioRow">
+              <div class="prioBox">
+                <div class="urgent">Urgent</div>
+                <img class="prioIcon" src="/assets/img/png/prio-urgent.png">
+              </div>
+              <div class="prioBox">
+                <div class="medium">Medium</div>
+                <img class="prioIcon" src="/assets/img/png/prio-medium.png">
+              </div>
+              <div class="prioBox">
+                <div class="low">Low</div>
+                <img class="prioIcon" src="/assets/img/png/prio-low.png">
+              </div>
+            </div>
+          </div>
+          <div class="addBox">
+            <h3>Category</h3>
+            <div class="dropDown"></div>
+          </div>
+          <div class="addBox">
+            <h3>Subtasks</h3>
+            <input type="text" placeholder="Add new subtask">
+          </div>
+        </div>
+      </div>
+
+      <div class="addTaskFooter">
+        <h4>This is required</h4>
+
+        <div class="footerBtnRow">
+          <div class="buttonBox">
+            <div class="btnContent">Clear</div>
+          </div>
+          <div class="buttonBox">
+            <div class="btnContent">Create Task</div>
+          </div>
+        </div>
+      </div>
+
+        
+      </div>
+    </main>
 
   </body>
   

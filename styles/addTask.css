@@ -1,0 +1,103 @@
+main{
+    margin: 180px 0px 0px 348px 
+}
+
+h1{
+    font-size: 60px;
+}
+
+.frame{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: 440px;
+    height: 48px;
+    border: solid 1px rgb(209, 209, 209);
+    border-radius: 10px;
+}
+
+textarea{
+    width: 440px;
+    height: 120px;
+    border: solid 1px rgb(209, 209, 209);
+    border-radius: 10px;
+}
+
+.addContent{
+    margin: 40px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.addBox{
+    margin: 00px 0px 28px 0px;
+    width: 440px;
+}
+
+.taskSeperator{
+    width: 3px;
+    height: 424px;
+    background-color: rgb(209, 209, 209);
+    margin: 0px 48px 0px 48px;
+}
+
+.prioRow{
+    display: flex;
+    justify-content: space-between;
+}
+
+.prioBox{
+    width: 136px;
+    height: 56px;
+    background-color: white;
+    border: solid 1px rgb(209, 209, 209);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.urgent{
+    padding: 0px 8px 0px 8px;
+}
+
+.urgnt:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(255, 61, 0);
+}
+
+.medium{
+    padding: 0px 8px 0px 8px;
+}
+
+.medium:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(255, 168, 0);
+}
+
+.low{
+    padding: 0px 8px 0px 8px;
+}
+
+.low:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(122, 226, 41);
+}
+
+.dropDown{
+    height: 48px;
+    border: solid 1px rgb(209, 209, 209);
+    border-radius: 10px;
+}
+
+.addTaskFooter{
+    display: flex;
+    justify-content: space-between;
+}
