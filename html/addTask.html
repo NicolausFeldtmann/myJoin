@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="../assets/img/favicon/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png">
     <link rel="manifest" href="../assets/img/favicon/site.webmanifest">
+    <script src="/scripts/addTask.js"></script>
     <title>Add Task</title>
 
     <link rel="stylesheet" href="/styles/addTask.css">
@@ -55,24 +56,33 @@
           <div class="addBox">
             <h3>Prio</h3>
             <div class="prioRow">
-              <div class="prioBox">
+              <div class="prioBox urBox" onclick="selectPriority(this)">
                 <div class="urgent">Urgent</div>
                 <img class="prioIcon" src="/assets/img/png/prio-urgent.png">
               </div>
-              <div class="prioBox">
+              <div class="prioBox miBox" onclick="selectPriority(this)">
                 <div class="medium">Medium</div>
                 <img class="prioIcon" src="/assets/img/png/prio-medium.png">
               </div>
-              <div class="prioBox">
+              <div class="prioBox loBox" onclick="selectPriority(this)">
                 <div class="low">Low</div>
                 <img class="prioIcon" src="/assets/img/png/prio-low.png">
               </div>
             </div>
           </div>
+          
           <div class="addBox">
             <h3>Category</h3>
-            <div class="dropDown"></div>
+            <div class="dropdown">
+              <button onclick="dropDown()" class="dropbtn">Select task category <img class="inputIcon" src="/assets/img/png/arrow_drop_down.png"></button>
+              <div id="dropMenu" class="dropdownContent">
+                <a class="dropRow" href="#">Technical Task</a>
+                <a class="dropRow" href="#">User Story</a>
+              </div>
+            </div>
           </div>
+            
+
           <div class="addBox">
             <h3>Subtasks</h3>
             <input type="text" placeholder="Add new subtask">
@@ -82,13 +92,14 @@
 
       <div class="addTaskFooter">
         <h4>This is required</h4>
-
         <div class="footerBtnRow">
-          <div class="buttonBox">
+          <div class="buttonBox clear">
             <div class="btnContent">Clear</div>
+            <img class="buttonBoxIcon" src="/assets/img/png/close.png">
           </div>
-          <div class="buttonBox">
+          <div class="buttonBox create">
             <div class="btnContent">Create Task</div>
+            <img class="buttonBoxIcon" src="/assets/img/png/check.png">
           </div>
         </div>
       </div>

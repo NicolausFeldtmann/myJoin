@@ -1,5 +1,5 @@
 main{
-    margin: 180px 0px 0px 348px 
+    margin: 180px 188px 0px 348px 
 }
 
 h1{
@@ -61,43 +61,151 @@ textarea{
     justify-content: center;
 }
 
+.prioBox:hover{
+    cursor: pointer;
+    box-shadow: 1px 3px 8px -3px rgba(0, 0, 0, 0.75);
+}
+
+.prioBox:active{
+    color: white;
+}
+
 .urgent{
     padding: 0px 8px 0px 8px;
 }
 
-.urgnt:hover{
-    cursor: pointer;
-    color: white;
+.urBox:active{
     background-color: rgb(255, 61, 0);
+}
+
+.urBox.active img{
+    content: url(/assets/img/png/prio-urgent-white-at.png);
 }
 
 .medium{
     padding: 0px 8px 0px 8px;
 }
 
-.medium:hover{
-    cursor: pointer;
-    color: white;
-    background-color: rgb(255, 168, 0);
+.miBox.active img{
+    content: url(/assets/img/png/prio-medium-white-at.png);
 }
 
 .low{
     padding: 0px 8px 0px 8px;
 }
 
-.low:hover{
-    cursor: pointer;
+.loBox.active img{
+    content: url(/assets/img/png/prio-low-white-at.png);
+}
+
+.prioBox.active {
     color: white;
+}
+  
+.urBox.active {
+    background-color: rgb(255, 61, 0);
+}
+  
+.miBox.active {
+    background-color: rgb(255, 168, 0);
+}
+  
+.loBox.active {
     background-color: rgb(122, 226, 41);
 }
 
-.dropDown{
+.dropbtn {
+    width: 440px;
     height: 48px;
     border: solid 1px rgb(209, 209, 209);
     border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0px 8px 0px 8px;
+    justify-content: space-between;
 }
+
+.inputIcon{
+    width: 8px;
+    height: 5px;
+}
+  
+.dropbtn:hover, .dropbtn:focus {
+    cursor: pointer;
+ }
+  
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+  
+.dropdownContent {
+    width: 440px;
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin: 136px 0px 0px 0px;
+    border-radius: 10px;
+}
+  
+.dropdownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropRow{
+    height: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.dropRow:hover{
+    border-radius: 10px;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
 
 .addTaskFooter{
     display: flex;
     justify-content: space-between;
+}
+
+.footerBtnRow{
+    display: flex;
+}
+
+.buttonBox{
+    margin: 0px 8px 0px 8px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.buttonBoxIcon{
+    margin: 0px 0px 0px 4px;
+}
+
+.create{
+    background-color: #2A3647;
+    color: white;
+}
+
+.clear{
+    color: #2A3647;
+    border: solid 1px #2A3647;
 }
