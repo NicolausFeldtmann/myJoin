@@ -7,6 +7,11 @@ h1{
     font-size: 60px;
 }
 
+h4{
+    font-size: 20px;
+    font-weight: 400;
+}
+
 .frame{
     display: flex;
     flex-direction: column;
@@ -17,6 +22,8 @@ input{
     height: 48px;
     border: solid 1px rgb(209, 209, 209);
     border-radius: 10px;
+    font-size: 20px;
+    padding: 0px 0px 0px 20px;
 }
 
 textarea{
@@ -24,6 +31,8 @@ textarea{
     height: 120px;
     border: solid 1px rgb(209, 209, 209);
     border-radius: 10px;
+    font-size: 20px;
+    padding: 18px 0px 0px 20px;
 }
 
 .addContent{
@@ -115,32 +124,51 @@ textarea{
     background-color: rgb(122, 226, 41);
 }
 
-.dropbtn {
-    width: 440px;
-    height: 48px;
-    border: solid 1px rgb(209, 209, 209);
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    font-weight: 400;
-    padding: 0px 8px 0px 8px;
-    justify-content: space-between;
-}
-
 .inputIcon{
     width: 8px;
     height: 5px;
 }
 
-.category{
+.assigned{
+    appearance: none;
+    background: url(/assets/img/png/arrow_drop_down.png) no-repeat right;
+    background-size: 7px;
+    background-position: calc(100% - 24px) center; 
     width: 440px;
     height: 48px;
     border: solid 1px rgb(209, 209, 209);
     border-radius: 10px;
     font-size: 20px;
     font-weight: 400;
+    padding: 0px 0px 0px 20px;
+}
+
+.category{
+    appearance: none;
+    background: url(/assets/img/png/arrow_drop_down.png) no-repeat right;
+    background-size: 7px;
+    background-position: calc(100% - 24px) center; 
+    width: 440px;
+    height: 48px;
+    border: solid 1px rgb(209, 209, 209);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0px 0px 0px 20px;
+}
+
+option{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+option:hover{
+    cursor: pointer;
+    background-color: rgb(209, 209, 209);
+}
+
+.category:hover{
+    cursor: pointer;
 }
   
 .dropbtn:hover, .dropbtn:focus {
@@ -259,6 +287,7 @@ textarea{
 .required:before{
     content:"* ";
     color: red;
+
   }
 
   
