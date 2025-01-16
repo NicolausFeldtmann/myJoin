@@ -1,5 +1,6 @@
 main{
-    margin: 180px 188px 0px 348px 
+    margin: 180px 200px 0px 348px;
+    max-width: 1020px;
 }
 
 h1{
@@ -132,6 +133,15 @@ textarea{
     width: 8px;
     height: 5px;
 }
+
+.category{
+    width: 440px;
+    height: 48px;
+    border: solid 1px rgb(209, 209, 209);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
   
 .dropbtn:hover, .dropbtn:focus {
     cursor: pointer;
@@ -186,7 +196,7 @@ textarea{
 }
 
 .buttonBox{
-    margin: 0px 8px 0px 8px;
+    margin: 0px 0px 0px 8px;
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -194,10 +204,27 @@ textarea{
     border-radius: 10px;
     font-size: 20px;
     font-weight: 700;
+    transition-delay: 0.1s;
 }
 
 .buttonBoxIcon{
     margin: 0px 0px 0px 4px;
+    width: 12px;
+    transition-delay: 0.1s;
+}
+
+.rejectIcon{
+    width: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.reject{
+    width: 12px;
+}
+
+.check{
+    width: 24px;
 }
 
 .create{
@@ -205,7 +232,33 @@ textarea{
     color: white;
 }
 
+.create:hover{
+    cursor: pointer;
+    background-color: rgb(41, 171, 226);
+    box-shadow: 1px 3px 8px -3px rgba(0, 0, 0, 0.75);
+}
+
 .clear{
     color: #2A3647;
     border: solid 1px #2A3647;
+    transition-delay: 0.1s;
 }
+
+.clear:hover{
+    cursor: pointer;
+    border: solid 1px rgb(41, 171, 226);
+    color: rgb(41, 171, 226);
+    box-shadow: 1px 3px 8px -3px rgba(0, 0, 0, 0.75);
+}
+
+.clear:hover img{
+    width: 24px;
+    content: url(/assets/img/png/clear-button-lightblue.png);
+}
+
+.required:before{
+    content:"* ";
+    color: red;
+  }
+
+  

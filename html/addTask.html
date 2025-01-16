@@ -33,7 +33,7 @@
       <div class="addContent">
         <div class="frame">
           <div class="addBox">
-            <h3>Add Title</h3>
+            <h3 class="required">Add Title</h3>
             <input type="text" placeholder="Add a title">
           </div>
           <div class="addBox">
@@ -50,7 +50,7 @@
 
         <div class="frame">
           <div class="addBox">
-            <h3>Due date</h3>
+            <h3 class="required">Due date</h3>
             <input type="date">
           </div>
           <div class="addBox">
@@ -72,14 +72,12 @@
           </div>
           
           <div class="addBox">
-            <h3>Category</h3>
-            <div class="dropdown">
-              <button onclick="dropDown()" class="dropbtn">Select task category <img class="inputIcon" src="/assets/img/png/arrow_drop_down.png"></button>
-              <div id="dropMenu" class="dropdownContent">
-                <a class="dropRow" href="#">Technical Task</a>
-                <a class="dropRow" href="#">User Story</a>
-              </div>
-            </div>
+            <h3 class="required">Category</h3>
+            <select class="category" name="cat">
+              <option value="" disabled selected>Select task Category</option>
+              <option value="technical">Technical Task</option>
+              <option value="user">User Task</option>
+            </select>
           </div>
             
 
@@ -91,15 +89,17 @@
       </div>
 
       <div class="addTaskFooter">
-        <h4>This is required</h4>
+        <h4 class="required before">This is required</h4>
         <div class="footerBtnRow">
           <div class="buttonBox clear">
             <div class="btnContent">Clear</div>
-            <img class="buttonBoxIcon" src="/assets/img/png/close.png">
+            <div class="rejectIcon">
+              	<img class="buttonBoxIcon reject" src="/assets/img/png/close.png">
+            </div>
           </div>
           <div class="buttonBox create">
             <div class="btnContent">Create Task</div>
-            <img class="buttonBoxIcon" src="/assets/img/png/check.png">
+            <img class="buttonBoxIcon check" src="/assets/img/png/check.png">
           </div>
         </div>
       </div>
