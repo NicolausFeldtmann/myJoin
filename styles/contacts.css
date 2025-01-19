@@ -1,0 +1,123 @@
+body{
+    background-color: rgb(246, 247, 248);
+}
+
+.mainContacts{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 96px 0px 0px 230px;
+    max-width: 1020px;
+}
+
+h4{
+    margin: 0px 0px 0px 0px;
+}
+
+.contactsContent{
+    background-color: rgb(255, 255, 255);
+    width: 456px;
+    height: 90vh;
+    padding: 0px 0px 0px 16px;
+}
+
+.headerRow{
+    margin: 74px 0px 0px 96px;
+    display: flex;
+    align-items: center;
+    width: 535px;
+}
+
+.contactsSeperator{
+    width: 3px;
+    height: 59px;
+    background-color: rgb(41, 171, 226);
+    margin: 0px 14px 0px 14px;
+}
+
+h1{
+    font-weight: 700;
+    margin: 0px 0px 0px 0px;
+    font-size: 61px;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 27px;
+    font-weight: 400;
+}
+
+h4{
+    font-size: 20px;
+    padding: 17px 0px 17px 56px;
+}
+
+.btnArea{
+    display: flex;
+    justify-content: center;
+    height: 101px;
+    padding: 16px 0px 16px 0px;
+}
+
+.addConButton{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addConIcon{
+    width: 24px;
+    margin: 0px 0px 0px 8px;
+}
+
+.addConButton{
+    width: 352px;
+    height: 56px;
+    background-color: rgb(42, 54, 71);
+    color: white;
+    font-size: 21px;
+    transition: transform 222ms ease-in-out;
+}
+
+.addConButton:hover{
+    cursor: pointer;
+    transform: scale(108%);
+}
+
+.filingCabinet{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.register{
+    margin: 0px 0px 353px 0px;
+}
+
+.regSeperator{
+    width: 352px;
+    height: 1px;
+    background-color: rgb(209, 209, 209);
+    margin: 8px 0px 8px 0px;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    border: 8px;
+    border-radius: 8px;
+    background-color: rgb(168, 168, 168);
+}
+
+::-webkit-scrollbar-track{
+    width: 24px;
+}
+
+/* Up */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+    border-width: 0 8px 8px 8px;
+    border-color: transparent transparent #555555 transparent;
+  }
